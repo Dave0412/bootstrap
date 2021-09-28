@@ -93,7 +93,7 @@ const conf = {
         // Inline the required helpers in each file
         babelHelpers: 'inline'
       }),
-      nodeResolve()
+      nodeResolve({ browser: true })
     ],
     output: {
       format: 'iife',

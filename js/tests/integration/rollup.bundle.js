@@ -15,7 +15,7 @@ module.exports = {
       'process.env.NODE_ENV': '"production"',
       preventAssignment: true
     }),
-    nodeResolve(),
+    nodeResolve({ browser: true }),
     babel({
       exclude: 'node_modules/**',
       babelHelpers: 'bundled'

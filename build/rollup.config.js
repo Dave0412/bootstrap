@@ -33,7 +33,7 @@ if (BUNDLE) {
       'process.env.NODE_ENV': '"production"',
       preventAssignment: true
     }),
-    nodeResolve()
+    nodeResolve({ browser: true })
   )
 }
 
